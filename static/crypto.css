@@ -1,0 +1,23 @@
+.container{
+    display:flex;
+}
+
+.coin {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    animation: slide-in 2s;
+}
+
+@keyframes slide-in {
+    from{
+        transform: translateX(1600px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

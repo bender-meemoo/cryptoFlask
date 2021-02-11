@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='crypto.css') }}">
+</head>
+<body>
+    <h1>Here are some bitcoin. Amount: {{numcoins}}</h1>
+    <div class="container">
+
+        {% for i in range(0,numcoins, 1) %}
+        <div class = "coin">
+            <h1>Bitcoin</h1>
+        </div>
+        {% endfor %}
+
+        
+    </div>
+    
+</body>
+</html>
